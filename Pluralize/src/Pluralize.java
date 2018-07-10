@@ -1,12 +1,12 @@
 public class Pluralize {
     public static void main(String[] args) {
-        int dogCount = 1;
-        int catCount = 2;
-        int turtleCount = 0;
 
-        pluralize("dog", dogCount);
-        pluralize("cat", catCount);
-        pluralize("turtle", turtleCount);
+
+        pluralize("dog", 13);
+        pluralize("cat", 2);
+        pluralize("turtle", 1);
+        pluralize("wooly rhino", 0);
+
     }
 
     private static void pluralize(String animal, int count) {
