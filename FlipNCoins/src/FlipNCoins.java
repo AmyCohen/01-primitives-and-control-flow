@@ -1,7 +1,7 @@
 public class FlipNCoins {
     public static void main(String[] args) {
         int n = 0;
-        flipNCoins(12);
+        flipNCoins(2);
     }
     public static void flipNCoins(int n) {
 
@@ -21,6 +21,14 @@ public class FlipNCoins {
             flips++;
         } while (heads != n);
 
-        System.out.println("It took " + flips +  " flips to flip " + n + " heads in a row.");
+        if (heads == 1) {
+            if (flips == 1) {
+                System.out.println("It took " + flips +  " flip to flip a head.");
+            } else {
+                System.out.println("It took " + flips +  " flips to flip " + n + " head in a row.");
+            }
+        } else {
+            System.out.println("It took " + flips + " flips to flip " + n + " heads in a row.");
+        }
     }
 }
